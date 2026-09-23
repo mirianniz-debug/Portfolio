@@ -1,60 +1,819 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mirian Niz · Geoprocessamento & Meio Ambiente</title><meta name="description" content="Portfólio de Mirian Niz, Engenheira Ambiental e Doutora em Ciências (USP), especializada em geoprocessamento, geoportais e análise territorial."><meta property="og:type" content="website"><meta property="og:url" content="https://mirianniz-debug.github.io/Portfolio/"><meta property="og:title" content="Mirian Niz · Geoprocessamento & Meio Ambiente"><meta property="og:description" content="Portfólio de Mirian Niz, Engenheira Ambiental e Doutora em Ciências (USP), especializada em geoprocessamento, geoportais e análise territorial."><meta property="og:image" content="https://mirianniz-debug.github.io/Portfolio/images/preview.jpg"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="%233c4b2c"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="%23f4ecdc" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>'><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--ink:#302b22;--muted:#716653;--paper:#f5eddd;--panel:#fbf7ee;--line:#d8c9a9;--green:#3c4b2c;--brand:#7c9a4e;--brand-dark:#5c7735;--clay:#b9744a;--white:#f5eddd;--display:'Comfortaa',sans-serif;--body:'Nunito',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body)}a{color:inherit}header{height:62px;background:var(--green);color:var(--white);display:flex;align-items:center;padding:0 38px;gap:24px;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px rgba(40,35,24,.14)}.brand{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none}.brand-mark{width:46px;height:46px;display:flex}.brand-mark svg{width:100%;height:100%}.brand-text strong{display:block;font:700 20px var(--display);line-height:1.05}.brand-text span{display:block;font-size:12px;font-weight:700;letter-spacing:.02em;color:#dce1cf;margin-top:2px}nav{display:flex;align-items:center;gap:34px;height:100%}nav a{height:100%;display:flex;align-items:center;text-decoration:none;font-size:12px;font-weight:800;color:#f3eee1;letter-spacing:.03em;position:relative}nav a:hover,nav a.active{color:#fff}nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--brand)}main{max-width:1480px;margin:0 auto;padding:28px 38px 64px}.section-heading{display:flex;align-items:center;gap:12px;margin:0 0 7px;font:700 15px var(--display);text-transform:uppercase;letter-spacing:.03em;color:#4c4b2d}.section-heading::after{content:"";height:1px;background:#cdbd9b;flex:1}.section-desc{margin:0 0 16px;font-size:13.5px;color:var(--muted);line-height:1.5}section{scroll-margin-top:80px;margin-bottom:18px}.map-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}.map-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .18s,box-shadow .18s}.map-card:hover,.web-card:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(55,46,30,.10)}.map-card img{width:100%;height:142px;object-fit:cover;display:block}.map-caption{padding:12px 14px 13px}.map-caption h3{font:700 16px var(--display);margin:0 0 5px}.map-caption p{font-size:13px;line-height:1.45;margin:0 0 5px;color:var(--muted)}.map-caption span{font-size:10px;color:var(--brand-dark);font-weight:800}.map-credit-row{display:flex;align-items:center;gap:5px}.mini-crest{width:16px;height:16px;flex:0 0 16px;display:inline-flex}.mini-crest img{width:100%;height:100%;object-fit:contain;border-radius:50%}.mini-leaf{width:16px;height:16px;flex:0 0 16px;display:inline-flex;padding:1px;border:1px solid #c8bb99;border-radius:50%;box-sizing:border-box}.mini-leaf svg{width:100%;height:100%}.analysis-body .title-row{margin-bottom:8px}.analysis-body .crest{display:inline-flex;width:36px;height:36px;flex:0 0 36px;overflow:hidden;border-radius:50%}.analysis-body .crest img{width:36px;height:36px;object-fit:contain;display:block}.workflow-section{padding:20px 22px;border-top:1px solid var(--line)}.workflow-section h3{font:700 16px var(--display);margin:0 0 8px}.workflow-section p{font-size:13px;line-height:1.5;color:var(--muted);margin:0 0 14px;max-width:760px}.workflow-section img{width:100%;height:auto;border-radius:8px;display:block}.page-hero{margin:8px 0 30px}.page-hero h1{font:700 32px var(--display);margin:0 0 10px;color:var(--ink)}.page-hero p{font-size:15px;line-height:1.6;color:var(--muted);max-width:680px;margin:0}.web-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.web-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column}.preview{height:228px;position:relative;background:#e9e2d1;overflow:hidden}.preview>img{width:100%;height:100%;display:block;object-fit:cover}.preview-bar{position:absolute;left:0;top:0;right:0;height:25px;background:rgba(33,49,42,.96);color:#fff;display:flex;align-items:center;padding:0 10px;font-size:10px;font-weight:800;letter-spacing:.01em}.preview iframe{width:100%;height:100%;border:0;background:#e7dfcc}.leaf-badge{position:absolute;right:10px;top:37px;width:44px;height:44px;border-radius:50%;background:rgba(251,247,238,.96);border:1px solid #c6b992;padding:5px;box-shadow:0 3px 10px rgba(40,35,24,.15)}.leaf-badge svg,.leaf-small svg,.crest svg,.crest img{width:100%;height:100%;object-fit:contain;border-radius:50%}.web-body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}.title-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}.title-row h3{font:700 16px var(--display);margin:0}.title-row .badges{display:flex;align-items:center;gap:6px;flex:0 0 auto}.crest,.leaf-small{width:36px;height:36px;flex:0 0 36px}.leaf-small{padding:2px;border:1px solid #c8bb99;border-radius:50%}.web-body p{font-size:12.5px;line-height:1.5;color:var(--muted);margin:0 0 10px;min-height:57px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px}.tags span{font-size:10px;font-weight:700;color:var(--muted);background:var(--paper);border:1px solid #cdbd9b;border-radius:20px;padding:3px 9px}.cta{align-self:flex-start;background:#4c713e;color:#fff;text-decoration:none;border-radius:20px;padding:8px 14px;font-size:11.5px;font-weight:800;transition:opacity .15s}.cta:hover{opacity:.86}.analysis-block{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden}.analysis-top{display:grid;grid-template-columns:32% 68%;min-height:176px}.analysis-img-wrap{position:relative}.analysis-img-wrap>img{width:100%;height:100%;min-height:176px;object-fit:cover;display:block;cursor:pointer;transition:filter .18s}.analysis-img-wrap>img:hover{filter:brightness(1.06)}.analysis-img-wrap .img-zoom-hint{position:absolute;left:10px;bottom:10px;margin-top:0;background:rgba(20,18,14,.6);color:#f6f3ec;padding:4px 10px;border-radius:20px;pointer-events:none}.analysis-body{padding:20px 22px;display:flex;flex-direction:column;justify-content:center}.analysis-body h2{font:700 18px var(--display);margin:0 0 8px}.analysis-body p{font-size:13px;line-height:1.55;color:var(--muted);margin:0 0 12px;max-width:720px}.stats{display:flex;gap:25px;flex-wrap:wrap;margin-bottom:12px}.stat{display:flex;flex-direction:column}.stat b{font:700 18px var(--display);color:#4a7043}.stat span{font-size:10px;color:var(--muted);max-width:140px}.analysis-tags{margin-bottom:0}footer{text-align:center;padding:24px;font-size:12px;color:var(--muted)}footer a{color:var(--brand-dark);font-weight:800}@media(max-width:1100px){.map-gallery{grid-template-columns:repeat(3,1fr)}.web-grid{grid-template-columns:1fr 1fr}header{padding:0 24px}nav{gap:20px}main{padding-left:24px;padding-right:24px}}@media(max-width:760px){header{height:auto;min-height:64px;padding:8px 16px;flex-wrap:wrap}nav{order:3;width:100%;height:38px;justify-content:center;gap:17px;overflow:auto}nav a{font-size:10px;height:38px;white-space:nowrap}.brand-text strong{font-size:18px}.brand-text span{font-size:10px}.map-gallery,.web-grid{grid-template-columns:1fr}.analysis-top{grid-template-columns:1fr}.analysis-img-wrap>img{height:220px}main{padding:24px 16px 45px}.preview{height:220px}}@media(max-width:430px){.brand-text span{display:none}.brand-mark{width:40px;height:40px}nav{gap:13px}.section-heading{font-size:13px}}
-.about-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:18px 22px;font-size:13.5px;line-height:1.6;color:var(--muted);max-width:760px}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.skill-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;border-top:4px solid var(--accent)}
-.skill-card h3{font:700 15px var(--display);margin:0 0 10px}
-.skill-tags{display:flex;flex-wrap:wrap;gap:6px}
-.skill-tags span{font-size:10.5px;font-weight:700;color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:3px 9px}
-.map-card{cursor:pointer}
-.img-zoom-hint{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:800;color:var(--brand-dark);margin-top:8px}
-#lightbox{position:fixed;inset:0;background:rgba(30,26,18,.82);display:none;align-items:center;justify-content:center;z-index:100;padding:30px}
-#lightbox.open{display:flex}
-.lightbox-inner{position:relative;background:var(--panel);border-radius:14px;max-width:1000px;width:100%;max-height:88vh;display:grid;grid-template-columns:62% 38%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
-.lightbox-inner img{width:100%;height:100%;object-fit:contain;background:#000;display:block}
-.lightbox-text{padding:26px 26px;overflow-y:auto}
-.lightbox-text h3{font:700 19px var(--display);margin:0 0 10px}
-.lightbox-text p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0 0 8px}
-.lightbox-text span{font-size:11px;color:var(--brand-dark);font-weight:800}
-.lightbox-close{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.35);color:#fff;border:none;width:32px;height:32px;border-radius:50%;font-size:18px;cursor:pointer;line-height:1;z-index:2}
-@media(max-width:760px){.lightbox-inner{grid-template-columns:1fr;max-height:92vh}.lightbox-inner img{max-height:45vh}}
-.lightbox-inner.wide{grid-template-columns:1fr;max-width:1320px}
-.lightbox-inner.wide img{background:#1c1912;max-height:74vh}
-.lightbox-inner.wide .lightbox-text{max-height:none}
-</style></head><body><header><a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="none" stroke="#f4ecdc" stroke-width="2.4"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f4ecdc" stroke-width="1.6" opacity="0.6"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="var(--clay)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-text"><strong>Mirian Niz</strong><span>Análise, Geoprocessamento e Meio Ambiente</span></span></a><nav><a href="sobre.html">SOBRE MIM</a><a href="habilidades.html">HABILIDADES</a><a href="formacao.html">FORMAÇÃO</a><a href="contato.html">CONTATO</a></nav></header><div id="top"></div><main><div class="page-hero"><h1>Meu Trabalho</h1><p>Unindo pesquisa ambiental e geoprocessamento em geoportais, mapas e análises que tornam dados territoriais acessíveis.</p></div><section id="trabalho" style="margin-top:6px"><div class="section-heading">MAPAS</div><p class="section-desc">Mapas temáticos produzidos para diagnóstico ambiental, planejamento e gestão territorial.</p><div class="map-gallery"><article class="map-card"><img src="images/foto-residuos.jpg" alt="Resíduos da supressão vegetal" loading="lazy"><div class="map-caption"><h3>Resíduos da supressão vegetal</h3><p>Resíduos da supressão vegetal por ano (2020–2024) — análise de compensação ambiental.</p><span class="map-credit-row"><span class="mini-crest"><img src="images/brasao.png" alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna"></span><span class="mini-leaf"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Prefeitura de Jaguariúna</span></div></article><article class="map-card"><img src="images/foto-inundacao.jpg" alt="Pontos de inundação e alagamento" loading="lazy"><div class="map-caption"><h3>Pontos de inundação e alagamento</h3><p>Pontos de inundação e alagamento do município, cruzando rede hidrográfica com levantamento de campo.</p><span class="map-credit-row"><span class="mini-crest"><img src="images/brasao.png" alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna"></span><span class="mini-leaf"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Prefeitura de Jaguariúna</span></div></article><article class="map-card"><img src="images/foto-arborizacao.jpg" alt="Área do projeto de arborização" loading="lazy"><div class="map-caption"><h3>Área do projeto de arborização</h3><p>Alocação de área destinada a um projeto de arborização, com detalhamento de escala local.</p><span class="map-credit-row"><span class="mini-crest"><img src="images/brasao.png" alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna"></span><span class="mini-leaf"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Prefeitura de Jaguariúna</span></div></article><article class="map-card"><img src="images/preview.jpg" alt="Área de conectividade ecológica e zoneamento urbano" loading="lazy"><div class="map-caption"><h3>Área de conectividade ecológica e zoneamento urbano</h3><p>Área de conectividade ecológica e zoneamento urbano do município.</p><span class="map-credit-row"><span class="mini-crest"><img src="images/brasao.png" alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna"></span><span class="mini-leaf"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Prefeitura de Jaguariúna</span></div></article><article class="map-card"><img src="images/foto-app-compensacao.jpg" alt="Sobreposição APP e área de compensação" loading="lazy"><div class="map-caption"><h3>Sobreposição APP e área de compensação</h3><p>Sobreposição entre área de compensação ambiental e Área de Preservação Permanente — Fazenda da Barra.</p><span class="map-credit-row"><span class="mini-crest"><img src="images/brasao.png" alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna"></span><span class="mini-leaf"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Prefeitura de Jaguariúna</span></div></article></div></section><section id="webgis"><div class="section-heading">WEBGIS</div><p class="section-desc">Geoportais e mapas interativos publicados na web, com camadas navegáveis e atualização contínua.</p><div class="web-grid"><article class="web-card"><div class="preview"><img src="images/foto-bacias-preview.jpg" alt="Prévia do Programa Bacias Jaguariúna" loading="lazy"><div class="preview-bar">Programa Bacias Jaguariúna</div></div><div class="web-body"><div class="title-row"><h3>Programa Bacias Jaguariúna</h3><span class="badges"><span class="crest"><img alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna" src="images/brasao.png"></span><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div><p>Conservação e recuperação de mananciais: áreas de reflorestamento, biodigestores em propriedades rurais e delimitação das sub-bacias Jaguari, Camanducaia e Atibaia, com registro fotográfico do antes/depois.</p><div class="tags"><span>Reflorestamento</span><span>Biodigestores</span><span>Sub-bacias</span></div><a class="cta" href="https://mirianniz-debug.github.io/ProgramaBaciasJaguariuna/" target="_blank" rel="noopener">Acessar geoportal →</a></div></article><article class="web-card"><div class="preview live-preview"><iframe src="https://mirianniz-debug.github.io/ResiduosSP/" title="Prévia do Geoportal Destinação de Resíduos no Estado de São Paulo" loading="lazy"></iframe><div class="preview-bar">Destinação de Resíduos · SP</div><div class="leaf-badge"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div class="web-body"><div class="title-row"><h3>Destinação de Resíduos · SP</h3><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><p>Inventário CETESB 2023 — mapeamento interativo e análise de aderência de aterros sanitários.</p><div class="tags"><span>Resíduos sólidos</span><span>Aterros sanitários</span><span>CETESB</span></div><a class="cta" href="https://mirianniz-debug.github.io/ResiduosSP/" target="_blank" rel="noopener">Acessar geoportal →</a></div></article><article class="web-card"><div class="preview"><img src="images/foto-usosolo-preview.jpg" alt="Prévia do Geoportal Uso do Solo" loading="lazy"><div class="preview-bar">Uso do Solo – Jaguariúna</div></div><div class="web-body"><div class="title-row"><h3>Uso do Solo – Jaguariúna</h3><span class="badges"><span class="crest"><img alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna" src="images/brasao.png"></span><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div><p>Mapa interativo de uso e ocupação do solo do município, com dados de 2023 e camadas complementares.</p><div class="tags"><span>Zoneamento</span><span>Plano Diretor</span><span>CAD → GIS</span></div><a class="cta" href="https://mirianniz-debug.github.io/Uso-do-solo-em-Jaguariuna/" target="_blank" rel="noopener">Acessar geoportal →</a></div></article><article class="web-card"><div class="preview live-preview"><iframe src="https://mirianniz-debug.github.io/Area-influencia-transbordo/" title="Prévia do Geoportal de Impacto — Estação de Transbordo" loading="lazy"></iframe><div class="preview-bar">Impacto do Transbordo</div><div class="leaf-badge"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div class="web-body"><div class="title-row"><h3>Área de Influência — Estação de Transbordo</h3><span class="badges"><span class="crest"><img alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna" src="images/brasao.png"></span><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div><p>Análise de impacto de uma estação de transbordo de resíduos: buffer de influência, rota do caminhão, hidrografia, áreas verdes/APP e zoneamento sobreposto à ocupação urbana no entorno.</p><div class="tags"><span>Análise de impacto</span><span>Resíduos sólidos</span><span>Zoneamento</span></div><a class="cta" href="https://mirianniz-debug.github.io/Area-influencia-transbordo/" target="_blank" rel="noopener">Acessar geoportal →</a></div></article><article class="web-card"><div class="preview live-preview"><iframe src="https://mirianniz-debug.github.io/Saneamento/" title="Prévia do Geoportal de Saneamento — Rede Coletora de Esgoto" loading="lazy"></iframe><div class="preview-bar">Saneamento · Esgoto</div><div class="leaf-badge"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div class="web-body"><div class="title-row"><h3>Rede Coletora de Esgoto — Jaguariúna</h3><span class="badges"><span class="crest"><img alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna" src="images/brasao.png"></span><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div><p>Infraestrutura de esgotamento sanitário: rede coletora, ligações prediais, poços de visita e elevatórias, cruzados com limites urbanos/rurais, viário e camadas ambientais (APP, hidrografia, inventário florestal).</p><div class="tags"><span>Saneamento básico</span><span>Redes técnicas</span><span>Meio ambiente</span></div><a class="cta" href="https://mirianniz-debug.github.io/Saneamento/" target="_blank" rel="noopener">Acessar geoportal →</a></div></article><article class="web-card"><div class="preview live-preview"><iframe src="https://mirianniz-debug.github.io/IlhaCalorArborizacao/" title="Prévia do Geoportal Ilhas de Calor x Arborização Urbana" loading="lazy"></iframe><div class="preview-bar">Ilhas de Calor x Arborização</div><div class="leaf-badge"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div class="web-body"><div class="title-row"><h3>Ilhas de Calor x Arborização Urbana — Jaguariúna</h3><span class="badges"><span class="crest"><img alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna" src="images/brasao.png"></span><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div><p>Cruzamento entre temperatura de superfície (Landsat 9, banda termal) e cobertura de copa arbórea na área urbana, com ferramenta de correlação por polígono desenhado no próprio mapa.</p><div class="tags"><span>Ilha de calor</span><span>Arborização urbana</span><span>Landsat</span></div><a class="cta" href="https://mirianniz-debug.github.io/IlhaCalorArborizacao/" target="_blank" rel="noopener">Acessar geoportal →</a></div></article></div></section><section id="analises"><div class="section-heading">ANÁLISES</div><p class="section-desc">Estudos técnicos que combinam sensoriamento remoto, geoprocessamento e estatística para embasar diagnósticos e decisões ambientais.</p><article class="analysis-block"><div class="analysis-top"><div class="analysis-img-wrap"><img src="images/foto-cobertura-vegetal.jpg" alt="Levantamento da Cobertura Vegetal de Jaguariúna" loading="lazy"><div class="img-zoom-hint">🔍 Clique para ampliar</div></div><div class="analysis-body"><div class="title-row"><h2 style="margin:0">Levantamento da Cobertura Vegetal de Jaguariúna</h2><span class="badges"><span class="crest"><img src="images/brasao.png" alt="Brasão de Jaguariúna" title="Prefeitura de Jaguariúna"></span><span class="leaf-small"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="#3c4b2c"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f6f3ec" stroke-width="1.6" opacity="0.8"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div><p>Classificação supervisionada de imagens de satélite CBERS-4A (algoritmo ECHO, software MultiSpec) para mapear e quantificar a cobertura arbórea em todo o território municipal e na área urbana consolidada — da obtenção da imagem no INPE ao pré-processamento no QGIS e à validação estatística dos resultados.</p><div class="stats"><div class="stat"><b>94,6%</b><span>acurácia global (município)</span></div><div class="stat"><b>99,6%</b><span>acurácia global (área urbana)</span></div><div class="stat"><b>27,79%</b><span>de cobertura arbórea municipal</span></div></div><div class="tags analysis-tags"><span>QGIS</span><span>MultiSpec</span><span>CBERS-4A</span><span>Classificação supervisionada</span><span>Algoritmo ECHO</span></div></div></div><div class="workflow-section"><h3>Fluxo de trabalho</h3><p>Da imagem de satélite bruta à classificação supervisionada: empilhamento de bandas, recorte, pan-sharpening e preparo para o MultiSpec.</p><img src="images/workflow-cobertura-vegetal.png" alt="Fluxo de trabalho do levantamento de cobertura vegetal" loading="lazy"></div></article></section></main><footer><a href="https://github.com/mirianniz-debug" target="_blank" rel="noopener">github.com/mirianniz-debug</a></footer><div id="lightbox" onclick="if(event.target===this)closeLightbox()">
-<div class="lightbox-inner">
-<button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-<img id="lightboxImg" src="" alt="">
-<div class="lightbox-text">
-<h3 id="lightboxTitle"></h3>
-<p id="lightboxDesc"></p>
-<span id="lightboxCredit"></span>
-</div>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirian Niz · Geoprocessamento & Meio Ambiente</title>
+<meta name="description" content="Portfólio de Mirian Niz, Engenheira Ambiental e Doutora em Ciências (USP), especializada em geoprocessamento, geoportais e análise territorial.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mirianniz-debug.github.io/Portfolio/">
+<meta property="og:title" content="Mirian Niz · Geoprocessamento & Meio Ambiente">
+<meta property="og:description" content="Portfólio de Mirian Niz, Engenheira Ambiental e Doutora em Ciências (USP), especializada em geoprocessamento, geoportais e análise territorial.">
+<meta property="og:image" content="https://mirianniz-debug.github.io/Portfolio/images/preview.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="%233c4b2c"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="%23f4ecdc" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5eddd; --panel:#fbf7ee; --panel-2:#efe6d2; --ink:#302b22; --muted:#716653;
+  --line:rgba(48,43,34,.16); --green:#3c4b2c; --green-deep:#2a3520; --brand:#7c9a4e; --brand-dark:#5c7735;
+  --clay:#b9744a; --on-green:#f4ecdc; --on-green-soft:#cdd6bd;
+  --display:'Young Serif',Georgia,'Times New Roman',serif; --body:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#1c1912; --panel:#242018; --panel-2:#2c261b; --ink:#f2ead9; --muted:#c2b39a;
+    --line:rgba(242,234,217,.14); --green:#1f2917; --green-deep:#161e10; --brand:#93b366; --brand-dark:#a9c47e;
+    --clay:#d68f5f; --on-green:#f2ead9; --on-green-soft:#c9d2b7;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#1c1912; --panel:#242018; --panel-2:#2c261b; --ink:#f2ead9; --muted:#c2b39a;
+  --line:rgba(242,234,217,.14); --green:#1f2917; --green-deep:#161e10; --brand:#93b366; --brand-dark:#a9c47e;
+  --clay:#d68f5f; --on-green:#f2ead9; --on-green-soft:#c9d2b7;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(20px,4vw,44px)}
+.skip{position:absolute;left:-999px;top:0;background:var(--green);color:var(--on-green);padding:10px 16px;z-index:50;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--clay);outline-offset:3px;border-radius:3px}
+
+/* progresso de rolagem */
+.progress{position:fixed;left:0;top:0;height:2.5px;background:var(--brand);z-index:40;width:0%;transition:width .1s linear}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--green) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(244,236,220,.12)}
+.top-inner{display:flex;align-items:center;gap:20px;padding:12px clamp(20px,4vw,44px)}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto;color:var(--on-green)}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-mark svg{width:100%;height:100%}
+.brand-name{font:700 17px/1.1 var(--display)}
+.brand-role{display:block;font:600 10.5px/1.3 var(--body);letter-spacing:.03em;color:var(--on-green-soft);margin-top:2px}
+.top nav{display:flex;gap:clamp(14px,2.6vw,28px);overflow-x:auto;scrollbar-width:none;min-width:0;flex-shrink:1}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{white-space:nowrap;text-decoration:none;font:600 14px/1 var(--body);color:var(--on-green-soft);padding:8px 2px;position:relative}
+.top nav a:hover{color:var(--on-green)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--green-deep);padding:clamp(64px,11vw,120px) 0 clamp(56px,9vw,96px);min-height:min(88svh,760px);display:flex;align-items:center}
+.hero-canopy{position:absolute;inset:0;width:100%;height:100%;transform:scale(1.06);animation:canopydrift 34s ease-in-out infinite alternate}
+@keyframes canopydrift{from{transform:scale(1.06) translate3d(0,0,0)}to{transform:scale(1.13) translate3d(-1.2%,-1%,0)}}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(100deg,rgba(23,26,15,.86) 0%,rgba(23,26,15,.62) 38%,rgba(23,26,15,.22) 62%,rgba(23,26,15,.5) 100%),linear-gradient(0deg,rgba(15,18,10,.55),transparent 45%)}
+.hero-contours{position:absolute;right:clamp(-14%,-4vw,-2%);top:50%;transform:translateY(-50%);width:min(64vw,760px);height:min(64vw,760px);pointer-events:none}
+.hero-contours .ring{fill:none;stroke:#f4ecdc;stroke-width:1.1;stroke-opacity:.55;stroke-dasharray:1;stroke-dashoffset:1;animation:ringdraw 1.5s cubic-bezier(.3,.7,.2,1) forwards}
+.hero-contours .ring.accent{stroke:var(--clay);stroke-width:1.6;stroke-opacity:.8}
+@keyframes ringdraw{to{stroke-dashoffset:0}}
+.hero-logo-reveal{position:absolute;right:clamp(-14%,-4vw,-2%);top:50%;width:min(64vw,760px);height:min(64vw,760px);transform:translateY(-50%);display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:0;transform-origin:center}
+.hero-logo-reveal.show{opacity:1;animation:logoreveal 2.2s cubic-bezier(.16,.8,.24,1) forwards}
+@keyframes logoreveal{
+  0%{opacity:0;transform:translateY(-50%) scale(.06)}
+  55%{opacity:1}
+  100%{opacity:1;transform:translateY(-50%) scale(1)}
+}
+.hero-logo-reveal .disc{position:relative;width:18%;height:18%;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(244,236,220,.98),rgba(244,236,220,.86));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(10,12,6,.4)}
+.hero-logo-reveal .pulse{position:absolute;inset:0;border-radius:50%;border:1.4px solid var(--clay);opacity:0}
+.hero-logo-reveal.show .pulse{animation:pulsering 2.2s cubic-bezier(.2,.7,.2,1) .3s forwards}
+@keyframes pulsering{
+  0%{opacity:.9;transform:scale(1)}
+  100%{opacity:0;transform:scale(4.2)}
+}
+.hero-logo-reveal svg{width:64%;height:64%;position:relative;z-index:1}
+.hero-inner{position:relative;z-index:2;width:100%;min-width:0;transition:transform .1s linear,opacity .1s linear}
+.hero p.kicker{margin:0 0 18px;font:700 14px/1 var(--body);color:var(--clay);display:flex;align-items:center;gap:10px}
+.hero p.kicker b{font:600 15px/1 var(--display);color:var(--on-green)}
+h1.headline{font:600 clamp(2.4rem,6.4vw,4.6rem)/1.06 var(--display);letter-spacing:-.01em;max-width:14ch;color:var(--on-green)}
+.hero .lede{margin:22px 0 30px;max-width:36rem;font-size:clamp(1.02rem,1.4vw,1.18rem);color:var(--on-green-soft)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:0 26px;background:var(--brand);color:#1b220f;font:700 14px var(--body);text-decoration:none;border-radius:999px;border:0;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.btn.ghost{background:transparent;color:var(--on-green);border:1.5px solid rgba(244,236,220,.4)}
+.btn.ghost:hover{border-color:var(--on-green);box-shadow:none}
+.scrollcue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:22px;height:34px;border:1.5px solid rgba(244,236,220,.5);border-radius:12px;z-index:2}
+.scrollcue::before{content:"";position:absolute;left:50%;top:6px;width:4px;height:8px;margin-left:-2px;background:var(--on-green);border-radius:2px;animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{opacity:1;transform:translateY(0)}70%{opacity:0;transform:translateY(10px)}100%{opacity:0;transform:translateY(0)}}
+
+/* seções genéricas */
+.block{padding:clamp(48px,8vw,88px) 0}
+.block-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;align-items:flex-end;margin-bottom:clamp(28px,4vw,44px)}
+.block-head h2{font:600 clamp(1.7rem,3.4vw,2.5rem)/1.12 var(--display)}
+.block-head p{margin:10px 0 0;max-width:34rem;color:var(--muted);font-size:.98rem}
+
+/* trabalho — seção com rolagem horizontal fixa */
+.tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.tag-row span{font:700 10.5px var(--body);letter-spacing:.02em;color:var(--brand-dark);background:var(--panel-2);border:1px solid var(--line);border-radius:20px;padding:4px 11px}
+.proj-link{display:inline-flex;align-items:center;gap:7px;font:700 13.5px var(--body);color:var(--brand-dark);text-decoration:none;white-space:nowrap}
+.proj-link:hover{text-decoration:underline}
+
+.hscroll{position:relative}
+.hscroll-spacer{height:calc(var(--n, 6) * 92vh)}
+.hscroll-pin{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:var(--paper)}
+.hscroll-head{padding-top:calc(env(safe-area-inset-top,0px) + 84px);padding-bottom:18px;flex:none}
+.hscroll-head h2{font:600 clamp(1.7rem,3.4vw,2.5rem)/1.12 var(--display)}
+.hscroll-head p{margin:10px 0 0;max-width:34rem;color:var(--muted);font-size:.98rem}
+.hscroll-track{display:flex;flex:1;min-height:0;will-change:transform}
+.hslide{flex:0 0 100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(20px,4vw,56px);align-items:center;padding:0 clamp(20px,4vw,44px);max-width:1240px;margin:0 auto;width:100%}
+.hslide-media{position:relative;height:min(52vh,520px);border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 50px rgba(48,43,34,.16);background:var(--panel)}
+.hslide-media img{width:100%;height:100%;object-fit:cover;object-position:center;animation:kenburns 22s ease-in-out infinite alternate}
+.hslide-info h3{font:600 clamp(1.3rem,2.6vw,1.9rem)/1.2 var(--display);margin:10px 0 12px}
+.hslide-num{font:700 12px var(--body);color:var(--clay);letter-spacing:.02em}
+.hslide-info p{margin:0 0 14px;color:var(--muted);font-size:.98rem;max-width:38rem}
+.hslide-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--line)}
+.hslide-credit{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.hslide-credit img{width:22px;height:22px;border-radius:50%;flex:none}
+.hslide-credit-plain::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand);display:inline-block}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hscroll-dots{display:flex;justify-content:center;gap:10px;padding-top:18px;flex:none}
+.hdot{all:unset;width:9px;height:9px;border-radius:50%;background:var(--line);cursor:pointer;transition:background .2s,transform .2s}
+.hdot.active{background:var(--brand-dark);transform:scale(1.3)}
+@media (max-width:900px){
+  .hscroll-spacer{height:auto}
+  .hscroll-pin{position:static;height:auto;display:block;padding:0 0 12px}
+  .hscroll-track{display:flex;overflow-x:auto;scroll-snap-type:x proximity;transform:none !important;-webkit-overflow-scrolling:touch}
+  .hslide{scroll-snap-align:start;grid-template-columns:1fr;padding:0 20px}
+  .hslide-media{height:44vh}
+  .hscroll-dots{display:none}
+}
+@media (prefers-reduced-motion: reduce){
+  .hslide-media img{animation:none}
+}
+
+/* mapas temáticos - filmstrip */
+.strip{display:flex;gap:18px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x proximity;margin:0 -4px}
+.strip::-webkit-scrollbar{height:8px}
+.strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.strip-card{scroll-snap-align:start;flex:0 0 clamp(240px,32vw,300px);background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .18s,box-shadow .18s}
+.strip-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(48,43,34,.13)}
+.strip-card img{aspect-ratio:4/3;object-fit:cover}
+.strip-body{padding:14px 16px 16px}
+.strip-body h3{font:600 15px/1.3 var(--display);margin:0 0 6px}
+.strip-body p{margin:0;font-size:12.5px;line-height:1.5;color:var(--muted)}
+
+/* análises - seção escura */
+.deep{background:var(--green);color:var(--on-green);position:relative;overflow:hidden}
+.deep-vine{position:absolute;left:0;top:0;width:46%;height:100%;opacity:.5;pointer-events:none;z-index:0}
+.deep .wrap{position:relative;z-index:1}
+@media (max-width:900px){.deep-vine{display:none}}
+.deep .eyebrow{color:var(--clay)}
+.deep .eyebrow::after{background:rgba(244,236,220,.18)}
+.deep h2{color:var(--on-green)}
+.deep-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:start}
+.deep p.desc{color:var(--on-green-soft);max-width:38rem;font-size:.98rem;margin:0 0 26px}
+.stat-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:22px 0;border-top:1px solid rgba(244,236,220,.16);border-bottom:1px solid rgba(244,236,220,.16);margin-bottom:26px}
+.stat b{display:block;font:600 clamp(1.5rem,3vw,2.1rem)/1 var(--display);color:var(--brand)}
+.stat span{display:block;margin-top:6px;font-size:12px;line-height:1.4;color:var(--on-green-soft)}
+.steps{margin:0 0 24px;padding:0;list-style:none;counter-reset:s}
+.steps li{position:relative;padding:12px 0 12px 46px;border-top:1px solid rgba(244,236,220,.14);color:var(--on-green-soft);font-size:.95rem}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:9px;width:28px;height:28px;border:1.5px solid var(--brand);border-radius:50%;display:grid;place-items:center;font:700 12px var(--display);color:var(--brand)}
+.steps b{color:var(--on-green);font-weight:700}
+.deep .tag-row span{color:var(--brand);background:rgba(244,236,220,.08);border-color:rgba(244,236,220,.2)}
+.deep-media{border-radius:16px;overflow:hidden;border:1px solid rgba(244,236,220,.16)}
+.deep-media img{display:block}
+.workflow-strip{margin-top:16px;border-radius:14px;overflow:hidden;border:1px solid rgba(244,236,220,.14)}
+
+/* sobre / habilidades / formação */
+.about-grid{display:grid;grid-template-columns:1.1fr 1.4fr .9fr;gap:clamp(24px,5vw,54px)}
+.about-grid h3{font:600 1.15rem/1.25 var(--display);color:var(--brand-dark);margin-bottom:14px}
+.about-lede{color:var(--muted);margin:0 0 16px;font-size:.98rem}
+.about-note{font-size:.86rem;color:var(--clay);font-weight:700;margin:0}
+.skills-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.skills-list li{padding:13px 0;border-bottom:1px solid var(--line)}
+.skills-list strong{display:block;font:700 13.5px var(--body);margin-bottom:6px}
+.skills-list .tag-row{margin-bottom:0}
+.formacao-list{margin:0;padding:0;list-style:none}
+.formacao-list li{padding:13px 0;border-bottom:1px solid var(--line)}
+.formacao-list li:first-child{border-top:1px solid var(--line)}
+.formacao-list strong{display:block;font:600 14.5px/1.3 var(--display);margin-bottom:3px}
+.formacao-list span{font-size:12.5px;color:var(--muted)}
+
+/* contato */
+.contact{background:var(--panel-2);border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px);align-items:start}
+.contact-grid h2{font:600 clamp(1.7rem,3.2vw,2.3rem)/1.15 var(--display);margin-bottom:14px}
+.contact-grid > div:first-child p{color:var(--muted);max-width:32rem;margin:0 0 26px}
+.reach{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.reach a,.reach .row{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:transform .15s,box-shadow .15s}
+.reach a:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(48,43,34,.1)}
+.reach .ico{width:38px;height:38px;border-radius:50%;background:var(--brand-dark);display:grid;place-items:center;flex:none}
+.reach .ico svg{width:18px;height:18px}
+.reach strong{display:block;font:700 13.5px var(--body)}
+.reach span{font-size:12.5px;color:var(--muted)}
+.copy-btn{margin-left:auto;font:700 11px var(--body);color:var(--brand-dark);background:none;border:1px solid var(--line);border-radius:20px;padding:6px 12px;cursor:pointer;flex:none}
+.copy-btn:hover{border-color:var(--brand-dark)}
+form.msg{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+form.msg label{display:block;font:700 12.5px var(--body);color:var(--muted);margin-bottom:6px}
+form.msg input,form.msg textarea{width:100%;font:500 14.5px var(--body);padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);margin-bottom:16px}
+form.msg textarea{min-height:104px;resize:vertical}
+
+footer{padding:26px clamp(20px,4vw,44px) calc(26px + env(safe-area-inset-bottom,0px));text-align:center;font-size:12px;color:var(--muted);background:var(--panel-2)}
+footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
+
+@media (max-width:900px){
+  .work{grid-template-columns:1fr}
+  .stage{display:none}
+  .proj-mobile-img{display:block}
+  .about-grid{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .brand-role{display:none}
+  .top-inner{gap:12px}
+}
+@media (max-width:640px){
+  .stat-row{grid-template-columns:1fr 1fr}
+  .stat-row .stat:last-child{grid-column:1/-1}
+  .deep-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .btn,.strip-card,.reach a,.proj-body,.proj-chev,.stage-frame img{transition:none}
+  .hero-canopy{animation:none;transform:scale(1.06)}
+  .hero-contours .ring{animation:none;stroke-dashoffset:0}
+  .hero-logo-reveal{animation:none;opacity:1;transform:translateY(-50%) scale(1)}
+  .hero-logo-reveal.show{animation:none}
+  .hero-logo-reveal .pulse,.hero-logo-reveal.show .pulse{animation:none;opacity:0}
+  .scrollcue{display:none}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#trabalho">Ir para o conteúdo</a>
+<div class="progress" id="scrollProgress"></div>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#hero">
+      <span class="brand-mark"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="none" stroke="#f4ecdc" stroke-width="2.4"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#f4ecdc" stroke-width="1.6" opacity="0.6"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#c98a5e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span><span class="brand-name">Mirian Niz</span><span class="brand-role">Geoprocessamento &amp; Meio Ambiente</span></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#trabalho">Trabalho</a>
+      <a href="#mapas">Mapas</a>
+      <a href="#analises">Análises</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <canvas id="canopy" class="hero-canopy" aria-hidden="true"></canvas>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <svg id="contourSvg" class="hero-contours" viewBox="0 0 700 700" aria-hidden="true"></svg>
+  <div class="hero-logo-reveal" id="heroLogo" aria-hidden="true">
+    <div class="disc">
+      <span class="pulse" aria-hidden="true"></span>
+      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="none" stroke="#3c4b2c" stroke-width="2.4"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#3c4b2c" stroke-width="1.6" opacity="0.6"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+  <div class="wrap hero-inner" id="heroParallax">
+    <p class="kicker"><b>Mirian Niz</b> · Engª Ambiental &amp; Dra. em Ciências (USP)</p>
+    <h1 class="headline">Dados territoriais, prontos para decidir.</h1>
+    <p class="lede">Geoprocessamento, geoportais e sensoriamento remoto a serviço de diagnósticos ambientais claros — do dado bruto ao mapa que qualquer pessoa entende.</p>
+    <div class="cta-row">
+      <a class="btn" href="#trabalho">Ver geoportais</a>
+      <a class="btn ghost" href="#analises">Ler as análises</a>
+    </div>
+  </div>
+  <div class="scrollcue" aria-hidden="true"></div>
+</section>
+
+<section class="hscroll" id="trabalho">
+  <div class="hscroll-spacer" id="hscrollSpacer">
+    <div class="hscroll-pin">
+      <div class="wrap hscroll-head">
+        <h2>Publicados na web, camada por camada</h2>
+        <p>Seis geoportais em produção contínua, a maioria a serviço da Prefeitura de Jaguariúna. Continue rolando — cada projeto entra na mesma direção.</p>
+      </div>
+
+      <div class="hscroll-track" id="hscrollTrack">
+
+        <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-bacias.png" alt="Geoportal Programa Bacias Jaguariúna" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">01 / 06</span>
+            <h3>Programa Bacias Jaguariúna</h3>
+            <p>Conservação e recuperação de mananciais: reflorestamento, biodigestores em propriedades rurais e delimitação das sub-bacias Jaguari, Camanducaia e Atibaia, com registro fotográfico do antes e depois.</p>
+            <div class="tag-row"><span>Reflorestamento</span><span>Biodigestores</span><span>Sub-bacias</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit"><img src="images/brasao.png" alt="Brasão de Jaguariúna">Prefeitura de Jaguariúna</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/ProgramaBaciasJaguariuna/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-residuossp.png" alt="Geoportal Destinação de Resíduos de São Paulo" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">02 / 06</span>
+            <h3>Destinação de Resíduos · SP</h3>
+            <p>Inventário CETESB 2023: mapeamento interativo dos aterros sanitários do estado e análise de aderência por município atendido.</p>
+            <div class="tag-row"><span>Resíduos sólidos</span><span>Aterros sanitários</span><span>CETESB</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit hslide-credit-plain">Estado de São Paulo</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/ResiduosSP/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-usosolo.png" alt="Geoportal Uso do Solo de Jaguariúna" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">03 / 06</span>
+            <h3>Uso do Solo – Jaguariúna</h3>
+            <p>Mapa interativo de uso e ocupação do solo do município, com dados de 2023 e camadas complementares de zoneamento.</p>
+            <div class="tag-row"><span>Zoneamento</span><span>Plano Diretor</span><span>CAD → GIS</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit"><img src="images/brasao.png" alt="Brasão de Jaguariúna">Prefeitura de Jaguariúna</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/Uso-do-solo-em-Jaguariuna/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-transbordo.png" alt="Geoportal de área de influência da estação de transbordo" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">04 / 06</span>
+            <h3>Área de Influência — Transbordo</h3>
+            <p>Análise de impacto de uma estação de transbordo de resíduos: buffer de influência, rota do caminhão, hidrografia, áreas verdes/APP e zoneamento sobreposto à ocupação urbana no entorno.</p>
+            <div class="tag-row"><span>Análise de impacto</span><span>Resíduos sólidos</span><span>Zoneamento</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit"><img src="images/brasao.png" alt="Brasão de Jaguariúna">Prefeitura de Jaguariúna</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/Area-influencia-transbordo/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-saneamento.png" alt="Geoportal da rede coletora de esgoto de Jaguariúna" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">05 / 06</span>
+            <h3>Rede Coletora de Esgoto</h3>
+            <p>Infraestrutura de esgotamento sanitário: rede coletora, ligações prediais, poços de visita e elevatórias, cruzados com limites urbanos/rurais, viário e camadas ambientais.</p>
+            <div class="tag-row"><span>Saneamento básico</span><span>Redes técnicas</span><span>Meio ambiente</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit"><img src="images/brasao.png" alt="Brasão de Jaguariúna">Prefeitura de Jaguariúna</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/Saneamento/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-ilhacalor.png" alt="Geoportal de ilhas de calor e arborização de Jaguariúna" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">06 / 06</span>
+            <h3>Ilhas de Calor x Arborização</h3>
+            <p>Cruzamento entre temperatura de superfície (Landsat 9, banda termal) e cobertura de copa arbórea na área urbana, com ferramenta de correlação por polígono desenhado no próprio mapa.</p>
+            <div class="tag-row"><span>Ilha de calor</span><span>Arborização urbana</span><span>Landsat</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit"><img src="images/brasao.png" alt="Brasão de Jaguariúna">Prefeitura de Jaguariúna</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/IlhaCalorArborizacao/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="hscroll-dots" id="hscrollDots" role="tablist" aria-label="Selecionar geoportal">
+        <button class="hdot" data-i="0" aria-label="Programa Bacias Jaguariúna"></button>
+        <button class="hdot" data-i="1" aria-label="Destinação de Resíduos SP"></button>
+        <button class="hdot" data-i="2" aria-label="Uso do Solo Jaguariúna"></button>
+        <button class="hdot" data-i="3" aria-label="Área de Influência Transbordo"></button>
+        <button class="hdot" data-i="4" aria-label="Rede Coletora de Esgoto"></button>
+        <button class="hdot" data-i="5" aria-label="Ilhas de Calor x Arborização"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="mapas" style="padding-top:0">
+  <div class="wrap">
+    <div class="block-head">
+      <div>
+        <h2>Diagnósticos pontuais</h2>
+      </div>
+      <p>Produzidos sob demanda para diagnóstico ambiental, planejamento e gestão territorial — sem a camada extra de um geoportal completo.</p>
+    </div>
+    <div class="strip">
+      <article class="strip-card"><img src="images/foto-residuos.jpg" alt="Resíduos da supressão vegetal" loading="lazy"><div class="strip-body"><h3>Resíduos da supressão vegetal</h3><p>2020–2024 · análise de compensação ambiental.</p></div></article>
+      <article class="strip-card"><img src="images/foto-inundacao.jpg" alt="Pontos de inundação e alagamento" loading="lazy"><div class="strip-body"><h3>Inundação e alagamento</h3><p>Rede hidrográfica cruzada com levantamento de campo.</p></div></article>
+      <article class="strip-card"><img src="images/foto-arborizacao.jpg" alt="Área do projeto de arborização" loading="lazy"><div class="strip-body"><h3>Projeto de arborização</h3><p>Alocação de área com detalhamento em escala local.</p></div></article>
+      <article class="strip-card"><img src="images/preview.jpg" alt="Conectividade ecológica e zoneamento urbano" loading="lazy"><div class="strip-body"><h3>Conectividade ecológica</h3><p>Zoneamento urbano sobreposto ao município inteiro.</p></div></article>
+      <article class="strip-card"><img src="images/foto-app-compensacao.jpg" alt="Sobreposição de APP e área de compensação" loading="lazy"><div class="strip-body"><h3>APP × compensação</h3><p>Fazenda da Barra — sobreposição de áreas protegidas.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="block deep" id="analises">
+  <canvas class="deep-vine" id="vineCanvas" aria-hidden="true"></canvas>
+  <div class="wrap deep-grid">
+    <div>
+      <h2>Cobertura vegetal de Jaguariúna</h2>
+      <p class="desc">Classificação supervisionada de imagens CBERS-4A (algoritmo ECHO, software MultiSpec) para mapear e quantificar a cobertura arbórea em todo o território municipal e na área urbana consolidada.</p>
+      <div class="stat-row">
+        <div class="stat"><b>94,6%</b><span>acurácia global no município</span></div>
+        <div class="stat"><b>99,6%</b><span>acurácia global na área urbana</span></div>
+        <div class="stat"><b>27,79%</b><span>de cobertura arbórea municipal</span></div>
+      </div>
+      <ol class="steps">
+        <li><b>Imagem original.</b> Cena CBERS-4A WPM (L4) obtida no INPE.</li>
+        <li><b>Empilhamento das bandas.</b> Bandas 1–4 combinadas no QGIS.</li>
+        <li><b>Recorte + buffer.</b> Limite municipal com buffer de 1 km.</li>
+        <li><b>Pan-sharpening.</b> Fusão Gram-Schmidt com a banda pancromática (2 m).</li>
+        <li><b>Recorte da área urbana.</b> Isolamento da área urbana consolidada.</li>
+        <li><b>Classificação no MultiSpec.</b> Algoritmo ECHO e validação estatística.</li>
+      </ol>
+      <div class="tag-row"><span>QGIS</span><span>MultiSpec</span><span>CBERS-4A</span><span>Classificação supervisionada</span><span>Algoritmo ECHO</span></div>
+    </div>
+    <div>
+      <div class="deep-media"><img src="images/foto-cobertura-vegetal.jpg" alt="Mapa de cobertura vegetal de Jaguariúna" loading="lazy"></div>
+      <div class="workflow-strip"><img src="images/workflow-cobertura-vegetal.png" alt="Fluxo de trabalho da classificação de cobertura vegetal" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sobre">
+  <div class="wrap">
+    <div class="block-head"><div><h2>Sobre, habilidades e formação</h2></div></div>
+    <div class="about-grid">
+      <div>
+        <h3>Sobre</h3>
+        <p class="about-lede">Unindo pesquisa ambiental e geoprocessamento em geoportais, mapas e análises que tornam dados territoriais acessíveis.</p>
+        <p class="about-note">Atendimento remoto para todo o Brasil — visitas e verificações em campo restritas à região de Campinas-SP.</p>
+      </div>
+      <div>
+        <h3>Habilidades</h3>
+        <ul class="skills-list">
+          <li><strong>Geoprocessamento &amp; SIG</strong><div class="tag-row"><span>QGIS</span><span>Análise espacial</span><span>Cartografia temática</span><span>Georreferenciamento</span></div></li>
+          <li><strong>WebGIS &amp; Geoportais</strong><div class="tag-row"><span>Mapas interativos</span><span>Camadas temáticas</span><span>Publicação web</span></div></li>
+          <li><strong>Sensoriamento Remoto</strong><div class="tag-row"><span>Classificação supervisionada</span><span>CBERS-4A</span><span>MapBiomas</span></div></li>
+          <li><strong>Análise Ambiental</strong><div class="tag-row"><span>Recursos hídricos</span><span>APPs</span><span>Arborização urbana</span></div></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Formação</h3>
+        <ul class="formacao-list">
+          <li><strong>Doutorado em Ciências</strong><span>USP São Carlos</span></li>
+          <li><strong>Mestrado em Tecnologias Ambientais</strong><span>UFMS</span></li>
+          <li><strong>Pós-doutorado em Gestão de Resíduos</strong><span>USP · 2 pós-doutorados</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block contact" id="contato">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Tem um projeto em mente?</h2>
+      <p>Me manda uma mensagem pelo formulário, e-mail ou WhatsApp — respondo o mais breve possível.</p>
+      <ul class="reach">
+        <a class="row" href="mailto:geoportais.niz@gmail.com">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5" stroke="#fff" stroke-width="1.6"/><path d="M3.5 6l8.5 7 8.5-7" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><strong>E-mail</strong><span id="emailText">geoportais.niz@gmail.com</span></span>
+          <button class="copy-btn" id="copyEmail" type="button" onclick="event.preventDefault();event.stopPropagation();">Copiar</button>
+        </a>
+        <a class="row" href="https://wa.me/5516982009069" target="_blank" rel="noopener">
+          <span class="ico" style="background:#3f8a5c"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+          <span><strong>WhatsApp</strong><span>+55 (16) 98200-9069</span></span>
+        </a>
+        <a class="row" href="https://github.com/mirianniz-debug" target="_blank" rel="noopener">
+          <span class="ico" style="background:#302b22"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.6-.1-.2-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.5.1 2.7.6.6 1 1.5 1 2.6 0 3.8-2.4 4.6-4.6 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2Z"/></svg></span>
+          <span><strong>GitHub</strong><span>github.com/mirianniz-debug</span></span>
+        </a>
+      </ul>
+    </div>
+    <form class="msg" id="msgForm" action="https://formsubmit.co/geoportais.niz@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nova mensagem pelo portfólio">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" style="display:none">
+      <label for="fNome">Nome</label>
+      <input id="fNome" name="Nome" required>
+      <label for="fEmail">Seu e-mail</label>
+      <input id="fEmail" type="email" name="Email" required>
+      <label for="fMsg">Mensagem</label>
+      <textarea id="fMsg" name="Mensagem" required></textarea>
+      <button class="btn" type="submit" style="width:100%;justify-content:center">Enviar mensagem</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a href="https://github.com/mirianniz-debug" target="_blank" rel="noopener">github.com/mirianniz-debug</a> · Elaboração cartográfica: Engª Mirian Niz
+</footer>
+
 <script>
-function openLightbox(el, wide){
-  var img = el.querySelector('img');
-  var h3 = el.querySelector('h2, h3');
-  var p = el.querySelector('p');
-  var credit = el.querySelector('.map-credit-row');
-  document.getElementById('lightboxImg').src = img.src;
-  document.getElementById('lightboxTitle').textContent = h3 ? h3.textContent : '';
-  document.getElementById('lightboxDesc').textContent = p ? p.textContent : '';
-  document.getElementById('lightboxCredit').textContent = credit ? credit.textContent : '';
-  document.querySelector('.lightbox-inner').classList.toggle('wide', !!wide);
-  document.getElementById('lightbox').classList.add('open');
-}
-function closeLightbox(){
-  document.getElementById('lightbox').classList.remove('open');
-}
-document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape') closeLightbox();
-});
-document.querySelectorAll('.map-card').forEach(function(card){
-  card.addEventListener('click', function(){ openLightbox(card); });
-});
-document.querySelectorAll('.analysis-img-wrap > img').forEach(function(img){
-  img.addEventListener('click', function(){ openLightbox(img.closest('.analysis-top'), true); });
-});
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* seção "Trabalho": rolagem vertical fixa a um carrossel horizontal */
+  (function hscroll(){
+    var spacer = document.getElementById('hscrollSpacer');
+    var track = document.getElementById('hscrollTrack');
+    if (!spacer || !track) return;
+    var dots = Array.prototype.slice.call(document.querySelectorAll('.hdot'));
+    var n = track.children.length;
+    spacer.style.setProperty('--n', n);
+    var mq = window.matchMedia('(max-width:900px)');
+
+    function setActiveDot(i){
+      dots.forEach(function(d, di){ d.classList.toggle('active', di === i); });
+    }
+
+    function onScroll(){
+      if (mq.matches) return;
+      var rect = spacer.getBoundingClientRect();
+      var total = rect.height - window.innerHeight;
+      var progress = total > 0 ? Math.min(1, Math.max(0, -rect.top / total)) : 0;
+      track.style.transform = 'translateX(-' + (progress * (n - 1) * 100) + '%)';
+      setActiveDot(Math.round(progress * (n - 1)));
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function(){
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function(){ onScroll(); ticking = false; });
+    }, {passive:true});
+    window.addEventListener('resize', onScroll);
+    onScroll();
+
+    dots.forEach(function(dot, i){
+      dot.addEventListener('click', function(){
+        var rect = spacer.getBoundingClientRect();
+        var total = rect.height - window.innerHeight;
+        var targetY = window.scrollY + rect.top + (i / (n - 1)) * total;
+        window.scrollTo({ top: targetY, behavior: reduce ? 'auto' : 'smooth' });
+      });
+    });
+
+    setActiveDot(0);
+  })();
+
+  /* copiar e-mail */
+  var copyBtn = document.getElementById('copyEmail');
+  copyBtn.addEventListener('click', function(){
+    var text = document.getElementById('emailText').textContent;
+    function done(){ copyBtn.textContent = 'Copiado!'; setTimeout(function(){ copyBtn.textContent = 'Copiar'; }, 1800); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, done);
+    } else { done(); }
+  });
+
+  function hexToRgb(hex){
+    hex = hex.replace('#','');
+    if (hex.length === 3) hex = hex.split('').map(function(c){return c+c;}).join('');
+    var n = parseInt(hex,16);
+    return [(n>>16)&255,(n>>8)&255,n&255];
+  }
+  var cssVar = function(name, fallback){
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return v || fallback;
+  };
+  var brandRGB = hexToRgb(cssVar('--brand', '#7c9a4e'));
+  var brandDarkRGB = hexToRgb(cssVar('--brand-dark', '#5c7735'));
+  var clayRGB = hexToRgb(cssVar('--clay', '#b9744a'));
+  var greenRGB = hexToRgb(cssVar('--green-deep', '#2a3520'));
+
+  /* 1. textura de dossel florestal (satélite estilizada), desenhada uma vez */
+  (function canopy(){
+    var canvas = document.getElementById('canopy');
+    var ctx = canvas.getContext('2d');
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    function paint(){
+      var w = canvas.parentElement.offsetWidth, h = canvas.parentElement.offsetHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      var g = ctx.createLinearGradient(0,0,w,h);
+      g.addColorStop(0,'rgb(' + greenRGB.join(',') + ')');
+      g.addColorStop(1,'rgb(' + brandDarkRGB.join(',') + ')');
+      ctx.fillStyle = g; ctx.fillRect(0,0,w,h);
+      var seed = 17;
+      function rnd(){ seed = (seed*9301+49297)%233280; return seed/233280; }
+      var blobs = Math.round((w*h)/9000);
+      for (var i=0;i<blobs;i++){
+        var x = rnd()*w, y = rnd()*h, r = 14 + rnd()*46;
+        var mix = rnd();
+        var col = mix < 0.62 ? brandRGB : (mix < 0.88 ? brandDarkRGB : clayRGB);
+        var a = 0.08 + rnd()*0.16;
+        ctx.beginPath();
+        ctx.fillStyle = 'rgba(' + col[0] + ',' + col[1] + ',' + col[2] + ',' + a + ')';
+        var pts = 7, ang0 = rnd()*Math.PI*2;
+        ctx.moveTo(x + Math.cos(ang0)*r, y + Math.sin(ang0)*r*0.7);
+        for (var p=1;p<=pts;p++){
+          var a2 = ang0 + (p/pts)*Math.PI*2;
+          var rr = r * (0.7 + rnd()*0.5);
+          ctx.lineTo(x + Math.cos(a2)*rr, y + Math.sin(a2)*rr*0.7);
+        }
+        ctx.closePath(); ctx.fill();
+      }
+      /* algumas clareiras/trilhas sutis */
+      ctx.strokeStyle = 'rgba(244,236,220,.06)';
+      ctx.lineWidth = 2;
+      for (var l=0;l<3;l++){
+        ctx.beginPath();
+        var sy = h*(0.2+l*0.3);
+        ctx.moveTo(-20, sy);
+        ctx.bezierCurveTo(w*0.3, sy+40*(l%2?1:-1), w*0.6, sy-30, w+20, sy+20);
+        ctx.stroke();
+      }
+    }
+    paint();
+    window.addEventListener('resize', paint);
+  })();
+
+  /* 2. curvas de nível: desenham-se em sequência e revelam a logo no centro */
+  (function contours(){
+    var svg = document.getElementById('contourSvg');
+    var logo = document.getElementById('heroLogo');
+    var NS = 'http://www.w3.org/2000/svg';
+    var cx = 350, cy = 350, rings = 11, baseStep = 27, startR = 34;
+    for (var i = 0; i < rings; i++){
+      var r = startR + i*baseStep;
+      var steps = 56, pts = [];
+      var seed = i*13 + 4;
+      function rnd(){ seed = (seed*9301+49297)%233280; return seed/233280; }
+      for (var s=0;s<=steps;s++){
+        var a = (s/steps)*Math.PI*2;
+        var wob = r * (0.05*Math.sin(a*3 + i) + 0.03*Math.sin(a*5 - i*0.7));
+        pts.push((cx + Math.cos(a)*(r+wob)).toFixed(1) + ' ' + (cy + Math.sin(a)*(r+wob)*0.92).toFixed(1));
+      }
+      var path = document.createElementNS(NS,'path');
+      path.setAttribute('d','M' + pts.join('L') + 'Z');
+      path.setAttribute('pathLength','1');
+      path.setAttribute('class','ring' + (i % 4 === 0 ? ' accent' : ''));
+      var delay = reduce ? 0 : (i*130 + 150);
+      path.style.animationDelay = delay + 'ms';
+      if (reduce) { path.style.animation = 'none'; path.style.strokeDashoffset = '0'; }
+      svg.appendChild(path);
+      if (i === rings - 1){
+        var totalMs = delay + 1500 + 60;
+        if (reduce){ logo.classList.add('show'); logo.style.animation = 'none'; logo.style.opacity = '1'; }
+        else setTimeout(function(){ logo.classList.add('show'); }, totalMs);
+      }
+    }
+  })();
+
+  /* 3. paralaxe do herói: ponteiro + rolagem */
+  (function heroParallax(){
+    if (reduce) return;
+    var hero = document.getElementById('hero');
+    var inner = document.getElementById('heroParallax');
+    var contoursEl = document.getElementById('contourSvg');
+    var logo = document.getElementById('heroLogo');
+    var mx = 0.5, my = 0.5;
+    hero.addEventListener('pointermove', function(e){
+      var r = hero.getBoundingClientRect();
+      mx = (e.clientX - r.left) / r.width; my = (e.clientY - r.top) / r.height;
+      var dx = (mx-0.5)*14, dy = (my-0.5)*14;
+      contoursEl.style.transform = 'translateY(calc(-50% + ' + (dy*-1) + 'px)) translateX(' + (dx*-1) + 'px)';
+      logo.style.transform = 'translateY(calc(-50% + ' + (dy*-1) + 'px)) translateX(' + (dx*-1) + 'px)';
+    });
+    var ticking = false;
+    function onScroll(){
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function(){
+        var r = hero.getBoundingClientRect();
+        var p = Math.min(1, Math.max(0, 1 - (r.bottom / (r.height + window.innerHeight*0.4))));
+        inner.style.transform = 'translateY(' + (p*40) + 'px)';
+        inner.style.opacity = String(1 - p*0.9);
+        ticking = false;
+      });
+    }
+    window.addEventListener('scroll', onScroll, {passive:true});
+  })();
+
+  /* 4. barra de progresso de rolagem */
+  (function progressBar(){
+    var bar = document.getElementById('scrollProgress');
+    function update(){
+      var h = document.documentElement;
+      var scrolled = h.scrollTop;
+      var max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (scrolled/max*100) : 0) + '%';
+    }
+    window.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  /* 5. números que contam ao entrar na tela */
+  (function countUp(){
+    var stats = Array.prototype.slice.call(document.querySelectorAll('.stat b'));
+    if (!stats.length) return;
+    stats.forEach(function(el){ el.setAttribute('data-final', el.textContent); });
+    if (reduce || !('IntersectionObserver' in window)) return;
+    function animate(el){
+      var final = el.getAttribute('data-final');
+      var suffix = final.replace(/^[\d.,]+/, '');
+      var numPart = final.slice(0, final.length - suffix.length);
+      var num = parseFloat(numPart.replace(',', '.'));
+      var dec = (numPart.split(/[.,]/)[1] || '').length;
+      var t0 = performance.now(), dur = 1200;
+      function step(t){
+        var k = Math.min(1, (t - t0) / dur);
+        var e = 1 - Math.pow(1-k, 3);
+        el.textContent = (num*e).toLocaleString('pt-BR',{minimumFractionDigits:dec,maximumFractionDigits:dec}) + suffix;
+        if (k < 1) requestAnimationFrame(step); else el.textContent = final;
+      }
+      requestAnimationFrame(step);
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ animate(en.target); io.unobserve(en.target); }
+      });
+    }, {threshold:.6});
+    stats.forEach(function(el){ io.observe(el); });
+  })();
+
+  /* 6. vinha crescendo conforme a rolagem pela seção de análises */
+  (function vine(){
+    var canvas = document.getElementById('vineCanvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var section = document.getElementById('analises');
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w, h;
+    function size(){
+      w = canvas.offsetWidth; h = canvas.offsetHeight;
+      canvas.width = w*dpr; canvas.height = h*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    var stem = [];
+    (function buildPath(){
+      var n = 60, seed = 5;
+      function rnd(){ seed=(seed*9301+49297)%233280; return seed/233280; }
+      var x = 0.5;
+      for (var i=0;i<=n;i++){
+        var t = i/n;
+        x += (rnd()-0.5)*0.05;
+        x = Math.max(0.15, Math.min(0.6, x));
+        stem.push({x:x, y:1 - t});
+      }
+    })();
+    var leaves = [0.12,0.22,0.34,0.46,0.58,0.7,0.82,0.92].map(function(t,i){
+      var idx = Math.round(t*stem.length);
+      var pt = stem[Math.min(idx, stem.length-1)];
+      return {t:t, x:pt.x + (i%2? .09:-.09), y:pt.y, side:i%2};
+    });
+    function draw(progress){
+      size();
+      ctx.clearRect(0,0,w,h);
+      var upto = Math.max(2, Math.floor(progress*stem.length));
+      ctx.strokeStyle = 'rgba(147,179,102,.9)';
+      ctx.lineWidth = 2.2; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.beginPath();
+      for (var i=0;i<upto;i++){
+        var p = stem[i];
+        var X = p.x*w, Y = p.y*h;
+        if (i===0) ctx.moveTo(X,Y); else ctx.lineTo(X,Y);
+      }
+      ctx.stroke();
+      leaves.forEach(function(lf){
+        if (lf.t > progress) return;
+        var lp = Math.min(1, (progress - lf.t) * 6);
+        var X = lf.x*w, Y = lf.y*h;
+        ctx.save();
+        ctx.translate(X,Y);
+        ctx.scale(lp, lp);
+        ctx.beginPath();
+        ctx.fillStyle = 'rgba(169,196,126,.85)';
+        ctx.ellipse(0,0, 14, 8, lf.side? .6:-.6, 0, Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+      });
+    }
+    function progressFor(){
+      var r = section.getBoundingClientRect();
+      var vh = window.innerHeight;
+      var p = (vh - r.top) / (r.height + vh*0.3);
+      return Math.min(1, Math.max(0.06, p));
+    }
+    if (reduce){ draw(1); return; }
+    var ticking = false;
+    function onScroll(){
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function(){ draw(progressFor()); ticking = false; });
+    }
+    window.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('resize', onScroll);
+    draw(progressFor());
+  })();
+})();
 </script>
-</body></html>
+</body>
+</html>
