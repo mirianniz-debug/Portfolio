@@ -26,3 +26,7 @@ Depois acesse `http://localhost:8000` no navegador.
 ## Contato
 
 - GitHub: [github.com/mirianniz-debug](https://github.com/mirianniz-debug)
+
+## Licença
+
+Todos os direitos reservados. Ver [LICENSE](LICENSE).
