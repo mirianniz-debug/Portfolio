@@ -154,7 +154,14 @@ h1.headline{font:600 clamp(2.4rem,6.4vw,4.6rem)/1.06 var(--display);letter-spaci
 .strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
 .strip-card{scroll-snap-align:start;flex:0 0 clamp(240px,32vw,300px);background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .18s,box-shadow .18s}
 .strip-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(48,43,34,.13)}
-.strip-card img{aspect-ratio:4/3;object-fit:cover}
+.strip-card img{aspect-ratio:4/3;object-fit:cover;cursor:zoom-in}
+
+/* lightbox de imagem ampliada */
+.lightbox{position:fixed;inset:0;background:rgba(10,12,6,.92);display:none;align-items:center;justify-content:center;padding:clamp(20px,5vw,56px);z-index:100}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:88vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lightbox-close{position:fixed;top:calc(env(safe-area-inset-top,0px) + 18px);right:20px;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(244,236,220,.4);background:rgba(28,25,18,.7);color:#f4ecdc;font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center;z-index:101}
+.lightbox-close:hover{border-color:#f4ecdc}
 .strip-body{padding:14px 16px 16px}
 .strip-body h3{font:600 15px/1.3 var(--display);margin:0 0 6px}
 .strip-body p{margin:0;font-size:12.5px;line-height:1.5;color:var(--muted)}
@@ -520,6 +527,11 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
   <a href="https://github.com/mirianniz-debug" target="_blank" rel="noopener">github.com/mirianniz-debug</a> · Elaboração cartográfica: Engª Mirian Niz
 </footer>
 
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fechar imagem ampliada">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
 <script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -743,6 +755,45 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
       });
     }, {threshold:.6});
     stats.forEach(function(el){ io.observe(el); });
+  })();
+
+  /* 5b. lightbox: amplia a imagem clicada nos "Diagnósticos pontuais" */
+  (function lightbox(){
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightboxImg');
+    var lbClose = document.getElementById('lightboxClose');
+    var triggers = Array.prototype.slice.call(document.querySelectorAll('.strip-card img'));
+    if (!lb || !triggers.length) return;
+
+    function open(img){
+      lbImg.src = img.currentSrc || img.src;
+      lbImg.alt = img.alt;
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+    function close(){
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+
+    triggers.forEach(function(img){
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Ampliar imagem: ' + img.alt);
+      img.addEventListener('click', function(){ open(img); });
+      img.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); open(img); }
+      });
+    });
+    lbClose.addEventListener('click', close);
+    lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && lb.classList.contains('open')) close();
+    });
   })();
 
   /* 6. vinha crescendo conforme a rolagem pela seção de análises */
