@@ -74,21 +74,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .hero-contours .ring{fill:none;stroke:#f4ecdc;stroke-width:1.1;stroke-opacity:.55;stroke-dasharray:1;stroke-dashoffset:1;animation:ringdraw 1.5s cubic-bezier(.3,.7,.2,1) forwards}
 .hero-contours .ring.accent{stroke:var(--clay);stroke-width:1.6;stroke-opacity:.8}
 @keyframes ringdraw{to{stroke-dashoffset:0}}
-.hero-logo-reveal{position:absolute;right:clamp(-14%,-4vw,-2%);top:50%;width:min(64vw,760px);height:min(64vw,760px);transform:translateY(-50%);display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:0;transform-origin:center}
+.hero-logo-reveal{position:absolute;right:clamp(-14%,-4vw,-2%);top:50%;width:min(64vw,760px);height:min(64vw,760px);transform:translateY(-50%);pointer-events:none;opacity:0;transform-origin:center}
 .hero-logo-reveal.show{opacity:1;animation:logoreveal 2.2s cubic-bezier(.16,.8,.24,1) forwards}
 @keyframes logoreveal{
   0%{opacity:0;transform:translateY(-50%) scale(.06)}
   55%{opacity:1}
   100%{opacity:1;transform:translateY(-50%) scale(1)}
 }
-.hero-logo-reveal .disc{position:relative;width:18%;height:18%;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(244,236,220,.98),rgba(244,236,220,.86));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(10,12,6,.4)}
-.hero-logo-reveal .pulse{position:absolute;inset:0;border-radius:50%;border:1.4px solid var(--clay);opacity:0}
+.hero-logo-reveal .disc{position:absolute;left:44.989%;top:45.442%;width:10.022%;height:8.937%;clip-path:url(#logoClip);background:radial-gradient(circle at 35% 30%,rgba(244,236,220,.98),rgba(244,236,220,.86));display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 6px 14px rgba(10,12,6,.45))}
+.hero-logo-reveal .pulse{position:absolute;left:50%;top:49.91%;width:10.5%;height:9.4%;transform:translate(-50%,-50%);border-radius:50%;border:1.4px solid var(--clay);opacity:0}
 .hero-logo-reveal.show .pulse{animation:pulsering 2.2s cubic-bezier(.2,.7,.2,1) .3s forwards}
 @keyframes pulsering{
-  0%{opacity:.9;transform:scale(1)}
-  100%{opacity:0;transform:scale(4.2)}
+  0%{opacity:.9;transform:translate(-50%,-50%) scale(1)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(4.4)}
 }
-.hero-logo-reveal svg{width:64%;height:64%;position:relative;z-index:1}
+.hero-logo-reveal .disc svg{width:74%;height:74%;position:relative;z-index:1}
 .hero-inner{position:relative;z-index:2;width:100%;min-width:0;transition:transform .1s linear,opacity .1s linear}
 .hero p.kicker{margin:0 0 18px;font:700 14px/1 var(--body);color:var(--clay);display:flex;align-items:center;gap:10px}
 .hero p.kicker b{font:600 15px/1 var(--display);color:var(--on-green)}
@@ -185,7 +185,6 @@ h1.headline{font:600 clamp(2.4rem,6.4vw,4.6rem)/1.06 var(--display);letter-spaci
 .about-grid{display:grid;grid-template-columns:1.1fr 1.4fr .9fr;gap:clamp(24px,5vw,54px)}
 .about-grid h3{font:600 1.15rem/1.25 var(--display);color:var(--brand-dark);margin-bottom:14px}
 .about-lede{color:var(--muted);margin:0 0 16px;font-size:.98rem}
-.about-note{font-size:.86rem;color:var(--clay);font-weight:700;margin:0}
 .skills-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
 .skills-list li{padding:13px 0;border-bottom:1px solid var(--line)}
 .skills-list strong{display:block;font:700 13.5px var(--body);margin-bottom:6px}
@@ -271,16 +270,22 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
 <section class="hero" id="hero">
   <canvas id="canopy" class="hero-canopy" aria-hidden="true"></canvas>
   <div class="hero-scrim" aria-hidden="true"></div>
-  <svg id="contourSvg" class="hero-contours" viewBox="0 0 700 700" aria-hidden="true"></svg>
+  <svg id="contourSvg" class="hero-contours" viewBox="0 0 700 700" aria-hidden="true">
+    <defs>
+      <clipPath id="logoClip" clipPathUnits="objectBoundingBox">
+        <path d="M0.9847,0.5100L0.9972,0.5678L1.0000,0.6277L0.9905,0.6871L0.9682,0.7426L0.9348,0.7919L0.8935,0.8337L0.8475,0.8686L0.7999,0.8980L0.7520,0.9237L0.7040,0.9470L0.6553,0.9678L0.6050,0.9848L0.5531,0.9960L0.5000,1.0000L0.4469,0.9960L0.3950,0.9848L0.3447,0.9678L0.2960,0.9470L0.2480,0.9237L0.2001,0.8980L0.1525,0.8686L0.1065,0.8337L0.0652,0.7919L0.0318,0.7426L0.0095,0.6871L0.0000,0.6277L0.0028,0.5678L0.0153,0.5100L0.0340,0.4558L0.0550,0.4052L0.0756,0.3568L0.0949,0.3087L0.1141,0.2598L0.1356,0.2102L0.1621,0.1614L0.1955,0.1161L0.2363,0.0770L0.2834,0.0461L0.3351,0.0239L0.3893,0.0098L0.4446,0.0023L0.5000,0.0000L0.5554,0.0023L0.6107,0.0098L0.6649,0.0239L0.7166,0.0461L0.7637,0.0770L0.8045,0.1161L0.8379,0.1614L0.8644,0.2102L0.8859,0.2598L0.9051,0.3087L0.9244,0.3568L0.9450,0.4052L0.9660,0.4558L0.9847,0.5100Z"/>
+      </clipPath>
+    </defs>
+  </svg>
   <div class="hero-logo-reveal" id="heroLogo" aria-hidden="true">
+    <span class="pulse" aria-hidden="true"></span>
     <div class="disc">
-      <span class="pulse" aria-hidden="true"></span>
       <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" fill="none" stroke="#3c4b2c" stroke-width="2.4"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" fill="none" stroke="#3c4b2c" stroke-width="1.6" opacity="0.6"/><path d="M52 48 L52 84 L68 48 L68 84" fill="none" stroke="#b9744a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
   </div>
   <div class="wrap hero-inner" id="heroParallax">
     <p class="kicker"><b>Mirian Niz</b> · Engª Ambiental &amp; Dra. em Ciências (USP)</p>
-    <h1 class="headline">Dados territoriais, prontos para decidir.</h1>
+    <h1 class="headline">Dados territoriais, acessíveis e descomplicados.</h1>
     <p class="lede">Geoprocessamento, geoportais e sensoriamento remoto a serviço de diagnósticos ambientais claros — do dado bruto ao mapa que qualquer pessoa entende.</p>
     <div class="cta-row">
       <a class="btn" href="#trabalho">Ver geoportais</a>
@@ -451,7 +456,6 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
       <div>
         <h3>Sobre</h3>
         <p class="about-lede">Unindo pesquisa ambiental e geoprocessamento em geoportais, mapas e análises que tornam dados territoriais acessíveis.</p>
-        <p class="about-note">Atendimento remoto para todo o Brasil — visitas e verificações em campo restritas à região de Campinas-SP.</p>
       </div>
       <div>
         <h3>Habilidades</h3>
