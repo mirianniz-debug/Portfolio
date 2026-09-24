@@ -2,16 +2,19 @@
 
 Portfólio pessoal em HTML/CSS puro de Mirian Niz, Engenheira Ambiental e Doutora em Ciências (USP), com foco em geoprocessamento, geoportais e análise territorial.
 
+🔗 **Acesse ao vivo:** https://mirianniz-debug.github.io/Portfolio/
+
 ## Estrutura
 
-| Arquivo | Descrição |
+Página única (`index.html`), com as seções navegáveis pelo menu do topo:
+
+| Seção | Conteúdo |
 |---|---|
-| `index.html` | Página inicial do portfólio |
-| `sobre.html` | Sobre mim |
-| `formacao.html` | Formação acadêmica |
-| `habilidades.html` | Habilidades e áreas de atuação |
-| `servicos.html` | Serviços oferecidos |
-| `contato.html` | Formulário e canais de contato |
+| Trabalho | Carrossel dos geoportais publicados |
+| Mapas | Diagnósticos pontuais (mapas temáticos) |
+| Análises | Estudo de cobertura vegetal com estatísticas |
+| Sobre | Perfil, habilidades e formação |
+| Contato | Formulário, e-mail e WhatsApp |
 
 ## Como visualizar localmente
 
