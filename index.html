@@ -116,7 +116,7 @@ h1.headline{font:600 clamp(2.4rem,6.4vw,4.6rem)/1.06 var(--display);letter-spaci
 .proj-link:hover{text-decoration:underline}
 
 .hscroll{position:relative}
-.hscroll-spacer{height:calc(var(--n, 7) * 92vh)}
+.hscroll-spacer{height:calc(var(--n, 8) * 92vh)}
 .hscroll-pin{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:var(--paper)}
 .hscroll-head{padding-top:calc(env(safe-area-inset-top,0px) + 84px);padding-bottom:18px;flex:none}
 .hscroll-head h2{font:600 clamp(1.7rem,3.4vw,2.5rem)/1.12 var(--display)}
@@ -307,15 +307,29 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
     <div class="hscroll-pin">
       <div class="wrap hscroll-head">
         <h2>Publicados na web, camada por camada</h2>
-        <p>Sete geoportais em produção contínua, a maioria a serviço da Prefeitura de Jaguariúna. Continue rolando — cada projeto entra na mesma direção.</p>
+        <p>Oito geoportais em produção contínua, a maioria a serviço da Prefeitura de Jaguariúna. Continue rolando — cada projeto entra na mesma direção.</p>
       </div>
 
       <div class="hscroll-track" id="hscrollTrack">
 
         <article class="hslide">
+          <div class="hslide-media"><img src="images/proj-pjc.png" alt="Geoportal da cidade-gêmea Pedro Juan Caballero e Ponta Porã" loading="lazy"></div>
+          <div class="hslide-info">
+            <span class="hslide-num">01 / 08</span>
+            <h3>Pedro Juan Caballero · Ponta Porã</h3>
+            <p>Geoportal bilíngue (PT/ES) sobre a cidade-gêmea da fronteira Paraguai–Brasil: a “Linha” que separa os dois países, o crescimento da mancha urbana de 1985 a 2020 (MapBiomas) e lugares de memória e cultura com foto, fato e fonte.</p>
+            <div class="tag-row"><span>Cidade-gêmea</span><span>Crescimento urbano</span><span>Bilíngue PT/ES</span></div>
+            <div class="hslide-foot">
+              <span class="hslide-credit hslide-credit-plain">Fronteira Paraguai · Brasil</span>
+              <a class="proj-link" href="https://mirianniz-debug.github.io/PedroJuanCaballero/" target="_blank" rel="noopener">Acessar geoportal →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hslide">
           <div class="hslide-media"><img src="images/proj-mataatlantica.png" alt="Geoportal do Plano Municipal de Mata Atlântica e Cerrado" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">01 / 07</span>
+            <span class="hslide-num">02 / 08</span>
             <h3>Plano Municipal de Mata Atlântica e Cerrado</h3>
             <p>Diagnóstico da vegetação nativa, ameaças (desmatamento e queimadas), áreas prioritárias pela vulnerabilidade à erosão e entorno de nascentes, e as ações de conservação e restauração do município.</p>
             <div class="tag-row"><span>Vegetação nativa</span><span>Queimadas</span><span>Áreas prioritárias</span></div>
@@ -329,7 +343,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
         <article class="hslide">
           <div class="hslide-media"><img src="images/proj-bacias.png" alt="Geoportal Programa Bacias Jaguariúna" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">02 / 07</span>
+            <span class="hslide-num">03 / 08</span>
             <h3>Programa Bacias Jaguariúna</h3>
             <p>Conservação e recuperação de mananciais: reflorestamento, biodigestores em propriedades rurais e delimitação das sub-bacias Jaguari, Camanducaia e Atibaia, com registro fotográfico do antes e depois.</p>
             <div class="tag-row"><span>Reflorestamento</span><span>Biodigestores</span><span>Sub-bacias</span></div>
@@ -343,7 +357,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
         <article class="hslide">
           <div class="hslide-media"><img src="images/proj-residuossp.png" alt="Geoportal Destinação de Resíduos de São Paulo" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">03 / 07</span>
+            <span class="hslide-num">04 / 08</span>
             <h3>Destinação de Resíduos · SP</h3>
             <p>Inventário CETESB 2023: mapeamento interativo dos aterros sanitários do estado e análise de aderência por município atendido.</p>
             <div class="tag-row"><span>Resíduos sólidos</span><span>Aterros sanitários</span><span>CETESB</span></div>
@@ -357,7 +371,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
         <article class="hslide">
           <div class="hslide-media"><img src="images/proj-usosolo.png" alt="Geoportal Uso do Solo de Jaguariúna" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">04 / 07</span>
+            <span class="hslide-num">05 / 08</span>
             <h3>Uso do Solo – Jaguariúna</h3>
             <p>Mapa interativo de uso e ocupação do solo do município, com dados de 2023 e camadas complementares de zoneamento.</p>
             <div class="tag-row"><span>Zoneamento</span><span>Plano Diretor</span><span>CAD → GIS</span></div>
@@ -371,7 +385,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
         <article class="hslide">
           <div class="hslide-media"><img src="images/proj-transbordo.png" alt="Geoportal de área de influência da estação de transbordo" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">05 / 07</span>
+            <span class="hslide-num">06 / 08</span>
             <h3>Área de Influência — Transbordo</h3>
             <p>Análise de impacto de uma estação de transbordo de resíduos: buffer de influência, rota do caminhão, hidrografia, áreas verdes/APP e zoneamento sobreposto à ocupação urbana no entorno.</p>
             <div class="tag-row"><span>Análise de impacto</span><span>Resíduos sólidos</span><span>Zoneamento</span></div>
@@ -385,7 +399,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
         <article class="hslide">
           <div class="hslide-media"><img src="images/proj-saneamento.png" alt="Geoportal da rede coletora de esgoto de Jaguariúna" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">06 / 07</span>
+            <span class="hslide-num">07 / 08</span>
             <h3>Rede Coletora de Esgoto</h3>
             <p>Infraestrutura de esgotamento sanitário: rede coletora, ligações prediais, poços de visita e elevatórias, cruzados com limites urbanos/rurais, viário e camadas ambientais.</p>
             <div class="tag-row"><span>Saneamento básico</span><span>Redes técnicas</span><span>Meio ambiente</span></div>
@@ -399,7 +413,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
         <article class="hslide">
           <div class="hslide-media"><img src="images/proj-ilhacalor.png" alt="Geoportal de ilhas de calor e arborização de Jaguariúna" loading="lazy"></div>
           <div class="hslide-info">
-            <span class="hslide-num">07 / 07</span>
+            <span class="hslide-num">08 / 08</span>
             <h3>Ilhas de Calor x Arborização</h3>
             <p>Cruzamento entre temperatura de superfície (Landsat 9, banda termal) e cobertura de copa arbórea na área urbana, com ferramenta de correlação por polígono desenhado no próprio mapa.</p>
             <div class="tag-row"><span>Ilha de calor</span><span>Arborização urbana</span><span>Landsat</span></div>
@@ -413,13 +427,14 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
       </div>
 
       <div class="hscroll-dots" id="hscrollDots" role="tablist" aria-label="Selecionar geoportal">
-        <button class="hdot" data-i="0" aria-label="Plano Municipal de Mata Atlântica e Cerrado"></button>
-        <button class="hdot" data-i="1" aria-label="Programa Bacias Jaguariúna"></button>
-        <button class="hdot" data-i="2" aria-label="Destinação de Resíduos SP"></button>
-        <button class="hdot" data-i="3" aria-label="Uso do Solo Jaguariúna"></button>
-        <button class="hdot" data-i="4" aria-label="Área de Influência Transbordo"></button>
-        <button class="hdot" data-i="5" aria-label="Rede Coletora de Esgoto"></button>
-        <button class="hdot" data-i="6" aria-label="Ilhas de Calor x Arborização"></button>
+        <button class="hdot" data-i="0" aria-label="Pedro Juan Caballero · Ponta Porã"></button>
+        <button class="hdot" data-i="1" aria-label="Plano Municipal de Mata Atlântica e Cerrado"></button>
+        <button class="hdot" data-i="2" aria-label="Programa Bacias Jaguariúna"></button>
+        <button class="hdot" data-i="3" aria-label="Destinação de Resíduos SP"></button>
+        <button class="hdot" data-i="4" aria-label="Uso do Solo Jaguariúna"></button>
+        <button class="hdot" data-i="5" aria-label="Área de Influência Transbordo"></button>
+        <button class="hdot" data-i="6" aria-label="Rede Coletora de Esgoto"></button>
+        <button class="hdot" data-i="7" aria-label="Ilhas de Calor x Arborização"></button>
       </div>
     </div>
   </div>
