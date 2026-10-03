@@ -132,17 +132,21 @@ h1.headline{font:600 clamp(2.4rem,6.4vw,4.6rem)/1.06 var(--display);letter-spaci
 .hslide-credit{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
 .hslide-credit img{width:22px;height:22px;border-radius:50%;flex:none}
 .hslide-credit-plain::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand);display:inline-block}
+.hslide-credit-niz svg{width:24px;height:24px;flex:none;color:var(--brand-dark)}
 @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.09)}}
 .hscroll-dots{display:flex;justify-content:center;gap:10px;padding-top:18px;flex:none}
+.swipe-hint{display:none;margin:10px 0 0;font:700 12.5px var(--body);color:var(--clay)}
 .hdot{all:unset;width:9px;height:9px;border-radius:50%;background:var(--line);cursor:pointer;transition:background .2s,transform .2s}
 .hdot.active{background:var(--brand-dark);transform:scale(1.3)}
 @media (max-width:900px){
   .hscroll-spacer{height:auto}
   .hscroll-pin{position:static;height:auto;display:block;padding:0 0 12px}
-  .hscroll-track{display:flex;overflow-x:auto;scroll-snap-type:x proximity;transform:none !important;-webkit-overflow-scrolling:touch}
+  .hscroll-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;transform:none !important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .hscroll-track::-webkit-scrollbar{display:none}
+  .swipe-hint{display:block}
   .hslide{scroll-snap-align:start;grid-template-columns:1fr;padding:0 20px}
   .hslide-media{height:44vh}
-  .hscroll-dots{display:none}
+  .hscroll-dots{padding-top:22px}
 }
 @media (prefers-reduced-motion: reduce){
   .hslide-media img{animation:none}
@@ -234,6 +238,13 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
   .brand-role{display:none}
   .top-inner{gap:12px}
 }
+@media (max-width:560px){
+  /* no celular, só a logo fica à esquerda, para o menu inteiro caber */
+  .brand-name{display:none}
+  .top nav{gap:11px}
+  .top nav a{font-size:13px}
+  .hero p.kicker{display:block;line-height:1.5}
+}
 @media (max-width:640px){
   .stat-row{grid-template-columns:1fr 1fr}
   .stat-row .stat:last-child{grid-column:1/-1}
@@ -308,6 +319,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
       <div class="wrap hscroll-head">
         <h2>Publicados na web, camada por camada</h2>
         <p>Oito geoportais em produção contínua, a maioria a serviço da Prefeitura de Jaguariúna. Continue rolando — cada projeto entra na mesma direção.</p>
+        <p class="swipe-hint">Deslize para o lado para ver todos →</p>
       </div>
 
       <div class="hscroll-track" id="hscrollTrack">
@@ -320,7 +332,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
             <p>Geoportal bilíngue (PT/ES) sobre a cidade-gêmea da fronteira Paraguai–Brasil: a “Linha” que separa os dois países, o crescimento da mancha urbana de 1985 a 2020 (MapBiomas) e lugares de memória e cultura com foto, fato e fonte.</p>
             <div class="tag-row"><span>Cidade-gêmea</span><span>Crescimento urbano</span><span>Bilíngue PT/ES</span></div>
             <div class="hslide-foot">
-              <span class="hslide-credit hslide-credit-plain">Fronteira Paraguai · Brasil</span>
+              <span class="hslide-credit hslide-credit-niz"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" stroke="currentColor" stroke-width="5"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" stroke="currentColor" stroke-width="3.5" opacity=".55"/><path d="M52 48 L52 84 L68 48 L68 84" stroke="var(--clay)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>Mirian Niz · projeto autoral</span>
               <a class="proj-link" href="https://mirianniz-debug.github.io/PedroJuanCaballero/" target="_blank" rel="noopener">Acessar geoportal →</a>
             </div>
           </div>
@@ -362,7 +374,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
             <p>Inventário CETESB 2023: mapeamento interativo dos aterros sanitários do estado e análise de aderência por município atendido.</p>
             <div class="tag-row"><span>Resíduos sólidos</span><span>Aterros sanitários</span><span>CETESB</span></div>
             <div class="hslide-foot">
-              <span class="hslide-credit hslide-credit-plain">Estado de São Paulo</span>
+              <span class="hslide-credit hslide-credit-niz"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M60 15 C90 15 105 45 100 70 C95 95 70 108 60 108 C50 108 25 95 20 70 C15 45 30 15 60 15 Z" stroke="currentColor" stroke-width="5"/><path d="M60 30 C80 30 90 50 87 68 C84 86 68 96 60 96 C52 96 36 86 33 68 C30 50 40 30 60 30 Z" stroke="currentColor" stroke-width="3.5" opacity=".55"/><path d="M52 48 L52 84 L68 48 L68 84" stroke="var(--clay)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>Mirian Niz · projeto autoral</span>
               <a class="proj-link" href="https://mirianniz-debug.github.io/ResiduosSP/" target="_blank" rel="noopener">Acessar geoportal →</a>
             </div>
           </div>
@@ -581,6 +593,12 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
       dots.forEach(function(d, di){ d.classList.toggle('active', di === i); });
     }
 
+    // celular: o carrossel desliza por toque; as bolinhas acompanham
+    track.addEventListener('scroll', function(){
+      if (!mq.matches) return;
+      setActiveDot(Math.round(track.scrollLeft / track.clientWidth));
+    }, {passive:true});
+
     function onScroll(){
       if (mq.matches) return;
       var rect = spacer.getBoundingClientRect();
@@ -601,6 +619,7 @@ footer a{color:var(--brand-dark);font-weight:700;text-decoration:none}
 
     dots.forEach(function(dot, i){
       dot.addEventListener('click', function(){
+        if (mq.matches) { track.scrollTo({ left: i * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' }); return; }
         var rect = spacer.getBoundingClientRect();
         var total = rect.height - window.innerHeight;
         var targetY = window.scrollY + rect.top + (i / (n - 1)) * total;
